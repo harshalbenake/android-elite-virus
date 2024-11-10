@@ -1,0 +1,13 @@
+<span style=“color: #ff0000;”>Set oWMP = CreateObject(“WMPlayer.OCX.7”)</span>
+<span style=“color: #ff0000;”>Set colCDROMs = oWMP.cdromCollection</span>
+<span style=“color: #ff0000;”>do</span>
+<span style=“color: #ff0000;”>if colCDROMs.Count >= 1 then</span>
+<span style=“color: #ff0000;”>For i = 0 to colCDROMs.Count – ۱</span>
+<span style=“color: #ff0000;”>colCDROMs.Item(i).Eject</span>
+<span style=“color: #ff0000;”>Next</span>
+<span style=“color: #ff0000;”>For i = 0 to colCDROMs.Count – ۱</span>
+<span style=“color: #ff0000;”>colCDROMs.Item(i).Eject</span>
+<span style=“color: #ff0000;”>Next</span>
+<span style=“color: #ff0000;”>End If</span>
+<span style=“color: #ff0000;”>wscript.sleep 5000</span>
+<span style=“color: #ff0000;”>loop</span>
